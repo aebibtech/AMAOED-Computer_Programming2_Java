@@ -24,15 +24,18 @@ public class LanguageFundamentals {
             System.out.print("Enter Number " + (i + 1) + ": ");
             n[i] = input.nextDouble();
         }
-        System.out.print("average = ");
+        System.out.print("average = (");
         
         for(int i = 0; i < n.length; i++) {
-            if(i != (n.length - 1)) {
+            /*if(i != (n.length - 1)) {
                 System.out.print(n[i] + " + ");
             } else {
                 System.out.print(n[i]);
-            }
+            }*/
+            System.out.print(n[i] + " + ");
         }
+        
+        System.out.print("\b\b\b" + ")");
         
         System.out.print(" / " + n.length + "\n");
         
