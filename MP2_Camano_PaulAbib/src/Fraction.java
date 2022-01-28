@@ -74,7 +74,7 @@ public class Fraction {
         
         if(this.getNumerator() < this.getDenominator()) {
             fractionType = "Proper Fraction";
-        } else if((this.getNumerator() % this.getDenominator() == 0) && (dNumerator / dDenominator >= 1)) {
+        } else if((this.getNumerator() % this.getDenominator() == 0) && (this.decimalEquivalent() >= 1)) {
             fractionType = "Whole Number";
         } else {
             fractionType = "Improper Fraction";
