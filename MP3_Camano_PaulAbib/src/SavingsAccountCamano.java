@@ -75,7 +75,8 @@ public final class SavingsAccountCamano extends BankAccountCamano {
         if(this.validateAcctNumber(accountNumber)) {
             System.out.println("\n***************BALANCE INQUIRY**************");
             System.out.println("Account Name: " + this.getAccountName());
-            System.out.println("Balance: Php " + this.getBalance());
+            String displayBalance = (this.getBalance() > 0.0) ? "Balance: Php " + this.getBalance() : "This account is already closed."; 
+            System.out.println(displayBalance);
             System.out.println();
         } else {
             success = false;
